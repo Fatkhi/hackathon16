@@ -14,15 +14,21 @@ angular.module('starter.controllers', [])
     //});
     $scope.searchChanged = function () {
       console.log(this.searchInput);
+      $scope.tours = Tours.search(this.searchInput);
     };
     $scope.tours = Tours.all();
-    $scope.remove = function (tour) {
-      Tours.remove(tour);
-    };
   })
 
   .controller('TourDetailCtrl', function ($scope, $stateParams, Tours) {
     $scope.chat = Tours.get($stateParams.id);
+  })
+
+  .controller('QuestCtrl', function ($scope, Quest) {
+    $scope.quest = Quest;
+    $scope.click = function() {
+      debugger;
+    };
+//    $scope.chat = Tours.get($stateParams.id);
   })
 
   .controller('AccountCtrl', function ($scope) {

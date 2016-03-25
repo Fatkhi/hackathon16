@@ -50,6 +50,36 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
+  .state('tab.quest', {
+    url: '/quest',
+    views: {
+      'tab-dash': {
+        templateUrl: 'templates/tab-quest.html',
+        controller: 'QuestCtrl'
+      }
+    }
+  })
+
+  .state('tab.quest-1', {
+    url: '/quest/1',
+    views: {
+      'tab-dash': {
+        templateUrl: 'templates/tab-quest-1.html',
+        controller: 'QuestCtrl'
+      }
+    }
+  })
+
+  .state('tab.quest-2', {
+    url: '/quest/2',
+    views: {
+      'tab-dash': {
+        templateUrl: 'templates/tab-quest-2.html',
+        controller: 'QuestCtrl'
+      }
+    }
+  })
+
   .state('tab.tours', {
       url: '/tours',
       views: {
@@ -60,7 +90,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
     .state('tab.tour-detail', {
-      url: '/tours/:chatId',
+      url: '/tours/:id',
       views: {
         'tab-tours': {
           templateUrl: 'templates/tour-detail.html',
