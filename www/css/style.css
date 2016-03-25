@@ -1,1 +1,31 @@
 /* Empty. Add your own CSS if you like */
+.item-content {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.item-text-wrap {
+	padding-left: 5% !important;
+	padding-bottom: 5% !important;
+	box-sizing: border-box;
+}
+
+.h1 {
+	padding-left: 5% !important;
+	padding-bottom: 5% !important;
+	box-sizing: border-box;
+}
+
+button {
+	float: left;
+	border-radius: 0 !important;
+}
+
+.description {
+	overflow: auto !important;
+	text-overflow: auto !important;
+	white-space: auto !important;
+}
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+    /* white-space: nowrap; */

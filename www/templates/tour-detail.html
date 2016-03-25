@@ -4,11 +4,46 @@
   The FriendsCtrl pulls data from the Friends service (service.js)
   The Friends service returns an array of friend data
 -->
-<ion-view view-title="{{chat.name}}">
-  <ion-content class="padding">
-    <img ng-src="{{chat.face}}" style="width: 64px; height: 64px">
-    <p>
-      {{chat.lastText}}
-    </p>
+<ion-view view-title="Результаты поиска">
+  <ion-content class="padding-vertical">
+    <img class="full-image" src="/img/brazilia.jpg">
+    <div class="item-text-wrap padding-vertical">
+      <h1 class="padding-vertical">Gayorka</h1>
+      <h4>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget rutrum turpis, sed mollis nisi. Nam rutrum magna nec ligula aliquet viverra. Curabitur efficitur, leo ut accumsan semper, mi est blandit dolor, eu ultricies dolor ligula id nulla. Fusce maximus turpis enim, at interdum nisi vulputate vel. Vestibulum fringilla, neque sed blandit tristique, nunc velit maximus dui, vel condimentum neque nunc ut metus. Pellentesque pulvinar, elit eget rhoncus ornare, libero nisl vulputate libero, quis luctus turpis dui sed nisl. Sed massa nisi, bibendum at elit v
+      </h4>
+    </div>
+    <button class="button button-full button-stable">
+      <i class="icon ion-ios-star-outline"></i> В избранное 
+    </button>
+    <button class="button button-full button-balanced">
+      <i class="icon ion-ios-telephone-outline"></i> Оставить заявку
+    </button> 
+
+<div class="list">
+  <div class="item-text-wrap padding-vertical">
+    <h1>Похожие туры</h1>
+  </div>
+  <a class="item item-thumbnail-left" href="#">
+    <img src="img/cover.jpg">
+    <h2>Лондон Великобритания </h2>
+    <p class = "description">Сумасшедшее старческое приключение за состояние sdf sdf sdf ds fds fsd fs fsdf ds fdsf sdf sdf sdf sd fsd fsd fsd fsd fsd fds fsd fsf sdf dsf dsf ds fsdf ds ds fds fsdf ds fdsf dsf dsf sd fsd fds fdsf dsf sdf sd fdsf ds fsd fds fsdf sdf sdf sdf sdf sdf dsf dsf ds fsdf ds fds fsd f </p>
+  </a>
+  <a class="item item-thumbnail-left" href="#">
+    <img src="img/cover.jpg">
+    <h2>Лондон Великобритания </h2>
+    <p>Сумасшедшее старческое приключение за состояние</p>
+  </a>
+  <a class="item item-thumbnail-left" href="#">
+    <img src="img/cover.jpg">
+    <h2>Лондон Великобритания</h2>
+    <p>Сумасшедшее старческое приключение за состояние</p>
+  </a>
+  <a class="item item-thumbnail-left" href="#">
+    <img src="img/cover.jpg">
+    <h2>Лондон Великобритания</h2>
+    <p>Сумасшедшее старческое приключение за состояние</p>
+  </a>
+</div>
   </ion-content>
 </ion-view>
