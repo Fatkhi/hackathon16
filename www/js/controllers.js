@@ -17,9 +17,6 @@ angular.module('starter.controllers', [])
       $scope.tours = Tours.search(this.searchInput);
     };
     $scope.tours = Tours.all();
-    $scope.remove = function (tour) {
-      Tours.remove(tour);
-    };
   })
 
   .controller('TourDetailCtrl', function ($scope, $stateParams, Tours) {
@@ -28,9 +25,9 @@ angular.module('starter.controllers', [])
 
   .controller('QuestCtrl', function ($scope, Quest) {
     $scope.quest = Quest;
-//    $scope.click = function() {
-//      debugger;
-//    };
+    $scope.click = function() {
+      debugger;
+    };
 //    $scope.chat = Tours.get($stateParams.id);
   })
 

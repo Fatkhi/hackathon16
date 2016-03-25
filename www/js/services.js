@@ -2,8 +2,7 @@ var app = angular.module('starter.services', []);
 
 app.service('Quest', function() {
   var self = {
-    activity: '',
-    children: null
+
   };
   return self;
 });
