@@ -25,6 +25,14 @@ angular.module('starter.controllers', [])
     $scope.chat = Tours.get($stateParams.id);
   })
 
+  .controller('QuestCtrl', function ($scope, Quest) {
+    $scope.quest = Quest;
+//    $scope.click = function() {
+//      debugger;
+//    };
+//    $scope.chat = Tours.get($stateParams.id);
+  })
+
   .controller('AccountCtrl', function ($scope) {
     $scope.settings = {
       enableFriends: true
