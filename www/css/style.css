@@ -4,3 +4,7 @@
 	white-space: normal !important;
 	max-height: 40px!important;
 }
+
+.row, .scroll {
+  height: 100%;
+}
