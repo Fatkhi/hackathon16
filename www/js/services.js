@@ -84,6 +84,24 @@ app.factory('Tours', function() {
     },
     country_search: function(query_string) {
       var arr = []
+      //debugger;
+      for (var i = this.foo["countries"].length - 1; i >= 0; i--) {
+        if (this.foo["countries"][i]["name"].toLowerCase() == query_string) {
+         // debugger;
+          var id = this.foo["countries"][i]["id"];
+          for (var i = this.foo["cities"].length - 1; i >= 0; i--) {
+            if (this.foo["cities"][i]["countryId"] == id) {
+           //    debugger;
+              arr.push(this.foo["cities"][i]["name"]);
+            }
+          };
+        // arr.push(this.foo["countries"][i]);
+        }
+      };
+       return arr;
+    },
+    city_search: function(query_string) {
+      var arr = []
       for (var i = this.foo["cities"].length - 1; i >= 0; i--) {
         if (this.foo["cities"][i]["name"].toLowerCase() == query_string) {
           arr.push(this.foo["cities"][i]);
@@ -95,24 +113,6 @@ app.factory('Tours', function() {
         }
       };
       return arr;
-    },
-    city_search: function(query_string) {
-    var arr = []
-    //debugger;
-    for (var i = this.foo["countries"].length - 1; i >= 0; i--) {
-      if (this.foo["countries"][i]["name"].toLowerCase() == query_string) {
-        //debugger;
-        var id = this.foo["countries"][i]["id"];
-        for (var i = this.foo["cities"].length - 1; i >= 0; i--) {
-          if (this.foo["cities"][i]["countryId"] == id) {
-             //debugger;
-            arr.push(this.foo["cities"][i]["name"]);
-          }
-        };
-      // arr.push(this.foo["countries"][i]);
-      }
-    };
-     return arr;
     }
   };
 });
