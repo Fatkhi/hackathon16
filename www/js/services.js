@@ -52,8 +52,8 @@ angular.module('starter.services', [])
     all: function() {
       return tours;
     },
-    remove: function(chat) {
-      chats.splice(chats.indexOf(chat), 1);
+    remove: function(tour) {
+      tours.splice(tours.indexOf(tour), 1);
     },
     get: function(id) {
       for (var i = 0; i < tours.length; i++) {
