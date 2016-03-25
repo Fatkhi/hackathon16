@@ -4,3 +4,11 @@
 	white-space: normal !important;
 	max-height: 40px!important;
 }
+
+.row, .scroll {
+  height: 100%;
+}
+
+.button {
+	font-size: 18px !important;
+}

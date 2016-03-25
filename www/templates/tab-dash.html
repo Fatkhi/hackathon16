@@ -1,28 +1,36 @@
-<ion-view view-title="Dashboard">
-  <ion-content >
-      <div class="list card">
-        <div class="item item-divider">
-          Live search
-        </div>
-        <div class="item item-input-inset">
-          <label class="item-input-wrapper">
-            <input type="text" placeholder="Email">
+<ion-view view-title="Подбор маршрута">
+  <ion-content has-header="true" padding="true" scroll="false">
+    <!--<div class="row row-center">-->
+      <!--<div class="col col-center">-->
+        <div class="list list-inset list-center">
+          <h2 class="text-center"> Выберите вариант подбора маршрута </h2>
+          <label class="item item-input">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="text" placeholder="Введите любое слово">
           </label>
-          <button class="button button-small">
-            Submit
+        </div>
+        <!--<a class="item item-text-wrap" href="#/tab/quest">-->
+          <!--<button class="button button-block button-positive">-->
+            <!--Block Button-->
+          <!--</button>-->
+        <!--</a>-->
+        <!--<div class="item item-text-wrap">-->
+          <!--<button class="button button-block button-energized">-->
+            <!--Randomize-->
+          <!--</button>-->
+        <!--</div>-->
+          <h3 class="padding-vertical  text-center "> или </h3>
+          <a href="#/tab/quest">
+            <button class="button button-balanced  button-full">
+              Ответить на пару простых вопросов
+            </button>
+          </a>
+          <h3 class="padding-vertical text-center "> или </h3>
+          <button class="button button-calm button-full">
+           Случаный пункт назначения
           </button>
         </div>
-        <a class="item item-text-wrap" href="#/tab/quest">
-          <button class="button button-block button-positive">
-            Block Button
-          </button>
-        </a>
-        <div class="item item-text-wrap">
-          <button class="button button-block button-energized">
-            Randomize
-          </button>
-        </div>
-
-    </div>
+      <!--</div>-->
+    <!--</div>-->
   </ion-content>
 </ion-view>
