@@ -1,5 +1,6 @@
 /* Empty. Add your own CSS if you like */
 .description {
-	overflow: auto !important;
+	overflow: hidden !important;
 	white-space: normal !important;
+	max-height: 40px!important;
 }
