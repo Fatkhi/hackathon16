@@ -62,6 +62,49 @@ angular.module('starter.services', [])
         }
       }
       return null;
+    },
+    search: function(query_string) {
+    //var arr = []
+      var result = []
+      var arr1 = []
+      var arr2 = []
+      arr1 = this.city_search(query_string.toLowerCase());
+      arr2 = this.country_search(query_string.toLowerCase());
+      if (arr1.length != 0) {result = result.concat(arr1)};
+      if (arr2.length != 0) {result = result.concat(arr2)};
+      return result;
+    },
+    country_search: function(query_string) {
+      var arr = []
+      for (var i = this.foo["cities"].length - 1; i >= 0; i--) {
+        if (this.foo["cities"][i]["name"].toLowerCase() == query_string) {
+          arr.push(this.foo["cities"][i]);
+        }
+      };
+      for (var i = this.foo["cities"].length - 1; i >= 0; i--) {
+        if (this.foo["cities"][i]["name"].toLowerCase().indexOf(query_string) == 0) {
+          arr.push(this.foo["cities"][i]);
+        }
+      };
+      return arr;
+    },
+    city_search: function(query_string) {
+    var arr = []
+    //debugger;
+    for (var i = this.foo["countries"].length - 1; i >= 0; i--) {
+      if (this.foo["countries"][i]["name"].toLowerCase() == query_string) {
+        //debugger;
+        var id = this.foo["countries"][i]["id"];
+        for (var i = this.foo["cities"].length - 1; i >= 0; i--) {
+          if (this.foo["cities"][i]["countryId"] == id) {
+             //debugger;
+            arr.push(this.foo["cities"][i]["name"]);
+          }
+        };
+      // arr.push(this.foo["countries"][i]);
+      }
+    };
+     return arr;
     }
   };
 });
