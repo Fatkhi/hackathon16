@@ -2,20 +2,41 @@
   <ion-content has-header="true" padding="true">
     <div class="row row-center">
       <div class="col col-center">
-        <div class="list list-inset list-center">
-          <h2 class="padding-vertical text-center"> Выберите вариант подбора маршрута </h2>
-          <label class="item item-input">
-            <i class="icon ion-search placeholder-icon"></i>
-            <input type="text" placeholder="Введите любое слово">
-          </label>
-          <h3 class="padding-vertical  text-center "> или </h3>
-          <button class="button button-balanced  button-full">
-            Ответить на пару простых вопросов
-          </button>
-          <h3 class="padding-vertical text-center "> или </h3>
-          <button class="button button-calm button-full">
-           Случаный пункт назначения
-          </button>
+        <div class="dashboard">
+            <div class = "majorScreen">
+                <button class="button button-outline button-balanced killerButton">
+                  Outlined Button
+                </button>
+                <button class="button button-full button-block button-calm">
+                  Block Button
+                </button>
+            </div>
+            <style>
+                .killerButton {
+                  width:100%;
+                  border-radius: 0;
+                }
+                .majorScreen {
+                  margin-top: 90%;
+                }
+                .bar-footer {
+                  //background: none;
+                }
+                .pane, .view{
+                  background: url("img/bg.jpg");
+                  background-position: 0, 0;
+                  background-repeat:no-repeat;
+                }
+                .tabs {
+                    top: 100% !important;
+                }
+                .nav-bar-container {
+                    display: none;
+                }
+                button {
+                  cursor: pointer
+                }
+            </style>
         </div>
       </div>
     </div>

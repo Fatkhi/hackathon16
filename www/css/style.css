@@ -1,4 +1,3 @@
-/* Empty. Add your own CSS if you like */
 .description {
 	overflow: hidden !important;
 	white-space: normal !important;
@@ -9,6 +8,19 @@
   height: 100%;
 }
 
+* {
+	font-family: "OpenSans" !important;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('/fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
 .button {
 	font-size: 18px !important;
+}
+
+.dashboard .button {
+	
 }
