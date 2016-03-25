@@ -14,6 +14,7 @@ angular.module('starter.controllers', [])
     //});
     $scope.searchChanged = function () {
       console.log(this.searchInput);
+      $scope.tours = Tours.search(this.searchInput);
     };
     $scope.tours = Tours.all();
     $scope.remove = function (tour) {
